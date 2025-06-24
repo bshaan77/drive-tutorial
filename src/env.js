@@ -7,11 +7,12 @@ export const env = createEnv({
    * isn't built with invalid env vars.
    */
   server: {
-    SINGLESTORE_HOST: z.string().url(),
+    SINGLESTORE_HOST: z.string(),
     SINGLESTORE_PORT: z.string(),
     SINGLESTORE_USER: z.string(),
     SINGLESTORE_PASS: z.string(),
     SINGLESTORE_DB_NAME: z.string(),
+    NODE_ENV: z.enum(["development", "production", "test"]),
   },
 
   /**
@@ -33,6 +34,7 @@ export const env = createEnv({
     SINGLESTORE_USER: process.env.SINGLESTORE_USER,
     SINGLESTORE_PASS: process.env.SINGLESTORE_PASS,
     SINGLESTORE_DB_NAME: process.env.SINGLESTORE_DB_NAME,
+    NODE_ENV: process.env.NODE_ENV,
   },
   /**
    * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially
