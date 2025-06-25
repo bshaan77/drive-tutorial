@@ -24,10 +24,6 @@
     "@libsql/client": "^0.10.0",
     "@radix-ui/react-slot": "^1.1.1",
     "@t3-oss/env-nextjs": "^0.10.1",
-    "@tailwindcss/postcss": "^4.1.10",
-    "@types/node": "^24.0.4",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
     "@uploadthing/react": "^7.1.5",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -40,22 +36,27 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^2.6.0",
-    "tailwindcss": "^4.1.10",
-    "typescript": "^5.8.3",
     "uploadthing": "^7.4.4",
     "zod": "^3.23.3"
   },
   "devDependencies": {
     "@types/eslint": "^8.56.10",
+    "@types/node": "^24.0.4",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
     "@typescript-eslint/eslint-plugin": "^8.1.0",
     "@typescript-eslint/parser": "^8.1.0",
+    "autoprefixer": "^10.4.21",
     "drizzle-kit": "^0.30.2",
     "eslint": "^8.57.0",
     "eslint-config-next": "^15.1.6",
     "eslint-plugin-drizzle": "^0.2.3",
     "postcss": "^8.5.1",
     "prettier": "^3.3.2",
-    "prettier-plugin-tailwindcss": "^0.6.5"
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "tailwindcss": "^3.4.0",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.8.3"
   },
   "ct3aMetadata": {
     "initVersion": "7.38.1"

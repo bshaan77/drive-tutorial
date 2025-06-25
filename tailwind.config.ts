@@ -1,6 +1,9 @@
 import { type Config } from "tailwindcss";
+import { withUt } from "uploadthing/tw";
+import animate from "tailwindcss-animate";
 
-export default {
+export default withUt({
+  darkMode: ["class"],
   content: ["./src/**/*.tsx"],
   theme: {
     extend: {
@@ -13,6 +16,20 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
+        gray: {
+          50: "#f9fafb",
+          100: "#f3f4f6",
+          200: "#e5e7eb",
+          300: "#d1d5db",
+          400: "#9ca3af",
+          500: "#6b7280",
+          600: "#4b5563",
+          700: "#374151",
+          750: "#2d3748",
+          800: "#1f2937",
+          900: "#111827",
+          950: "#030712",
+        },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -56,4 +73,5 @@ export default {
       },
     },
   },
-} satisfies Config;
+  plugins: [animate],
+} satisfies Config);
